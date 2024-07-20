@@ -31,6 +31,10 @@ if dlgData.confirm then
         return app.alert("Please choose a filename different to the source file")
     end
 
+    if dlgData.preview and (sprite.width % 20 ~= 0 or sprite.height % 20 ~= 0) then
+        return app.alert("Tile preview space requires sprite width and height to be multiples of 20")
+    end
+
     app.command.ExportSpriteSheet { ui = false, askOverwrite = false, type = SpriteSheetType.COLUMNS, textureFilename =
         dlgData.filename, openGenerated = true, tag = dlgData.tag, splitLayers = dlgData.layers_as_variants }
 

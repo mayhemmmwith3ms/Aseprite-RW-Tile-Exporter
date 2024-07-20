@@ -13,7 +13,7 @@ Created to lessen the tedium of creating and testing custom tiles and props by a
 ## How to use
 ### Format
 The sprite must be in a certain format to work best with the exporter.
-- The width and height should be divisible by 20 (the size of a single 'cell' of a tile).
+- When making a tile, the width and height should be divisible by 20 (the size of a single 'cell' of a tile).
 - The background should be transparent.
 - Each frame of the sprite's animation should correspond to a sublayer of the tile, with earlier frames being further forward.
 - A sprite's layers can optionally be exported as tile variants (such as for varied props or tiles that use #rnd). Hidden layers will be ignored.
