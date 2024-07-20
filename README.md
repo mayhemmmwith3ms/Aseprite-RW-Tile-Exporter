@@ -20,7 +20,7 @@ The sprite must be in a certain format to work best with the exporter.
 ### Exporting
 Running the script through Aseprite should bring up an interface that looks like this:
 
-![A screenshot of the exporter interface](image-1.png)
+![A screenshot of the exporter interface](images/image-1.png)
 
 #### Result File:
 This is the file that the tile will be exported as. This cannot be the same as the source file, as to not accidentally overwrite it.
